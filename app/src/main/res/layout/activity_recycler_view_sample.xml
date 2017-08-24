@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ningqiang.pullrefresh.sample.activity.ListViewSample">
+
+
+    <com.ningqiang.pullrefresh.widget.RefreshLayout
+        android:id="@+id/refreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:headerBackgroundColor="@android:color/holo_green_dark"
+        app:headerTextColor="@android:color/holo_purple"
+        app:headerTextSize="12sp"
+        app:pullToRefreshText="下拉刷新"
+        app:refreshingText="正在刷新"
+        app:releaseToRefreshText="@string/releaseToRefreshText">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.ningqiang.pullrefresh.widget.RefreshLayout>
+
+</FrameLayout>

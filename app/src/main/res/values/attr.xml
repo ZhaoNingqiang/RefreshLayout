@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RefreshLayout">
+        <attr name="headerHeight" format="dimension" />
+        <attr name="headerTextSize" format="dimension" />
+        <attr name="headerTextColor" format="color" />
+        <attr name="headerBackgroundColor" format="color"/>
+        <attr name="pullToRefreshText" format="string" />
+        <attr name="releaseToRefreshText" format="string" />
+        <attr name="refreshingText" format="string" />
+    </declare-styleable>
+</resources>

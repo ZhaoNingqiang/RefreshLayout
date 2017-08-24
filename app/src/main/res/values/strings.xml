@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PullRefresh</string>
+    <string name="loading_more">Loading...</string>
+    <string name="releaseToRefreshText">松手刷新</string>
+</resources>
