@@ -40,6 +40,7 @@ public class RecyclerViewSample extends AppCompatActivity {
                         mData.add(0, "load refresh data " + refreshCount);
                         mAdapter.resetData(mData);
                     }
+                    //数据加载完成，设置Refresh状态
                     refreshlayout.setRefresh(false);
                     break;
             }
@@ -80,6 +81,7 @@ public class RecyclerViewSample extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
+        //调用refreshlayout.setRefresh(true);方法将会回调OnRefreshListener的onRefresh方法，在onRefresh方法中刷新数据
         refreshlayout.setRefresh(true);
     }
 
